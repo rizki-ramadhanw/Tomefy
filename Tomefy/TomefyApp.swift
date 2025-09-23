@@ -14,7 +14,7 @@ struct TomefyApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            RegisterView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }

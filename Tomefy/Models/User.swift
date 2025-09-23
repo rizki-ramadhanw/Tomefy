@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+struct User: Codable {
+    let userID: String = UUID().uuidString
+    let email: String
+    let password: String
+    let nickname: String
+}
